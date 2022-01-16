@@ -1,0 +1,50 @@
+/*PC*/
+@media(min-width:1024px){
+    .menu-moblie{
+        display: none;
+    }
+}
+/*Table*/
+@media(min-width:740px) and (max-width:1023px){
+    .work-icon{
+        top: 574px;
+    }
+
+    .menu-moblie{
+        display: none;
+    }
+}
+/*Moble*/
+@media(max-width:740px){
+    .nav-end{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    #nav >li{
+        display: none;
+    }
+
+    .member-item{
+        width: 100%;
+    }
+
+    .member-list .member-img{
+        width: 50%;
+    }
+
+    .forn-size-moblie{
+        font-size: 25px;
+    }
+
+    .moblie-padding{
+        margin: 8px 0;
+    }
+
+    .work-icon{
+        top:1978px;
+    }
+}

@@ -1,0 +1,576 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    text-align: center;
+}
+
+.margin1{
+    margin: 10px 0;
+}
+
+.margin2{
+    margin: 15px 0;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-quarter{
+    float: left;
+    width: calc(100%/4);
+}
+
+.col-third{
+    width: calc(100%/3);
+}
+
+.col{
+    float: left;
+    width: 100%;
+}
+
+.m5{
+    width: 41.666666%;
+}
+
+.m7{
+    width: 58.333333%;
+}
+
+.space-letter{
+    letter-spacing: 1px;
+}
+
+.color{
+    background-color: #666 !important;
+}
+
+.font{
+    font-size: 24px;
+}
+
+#main {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 38px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    border: none;
+    
+}
+
+#nav {
+    
+}
+
+#nav #subnav{
+    list-style-type: none;
+}
+
+#nav >li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 39px;
+    padding: 0 16px;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.logo{
+    background-color: #009688;
+    line-height: 38px;
+    padding: 0 16px;
+    font-size: 15px;
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+.icon-logo{
+    margin-right: 16px;
+}
+
+.logo:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#nav #subnav {
+    display: none;
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    min-width: 160px;
+    top:100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav #subnav a {
+    line-height: 38px;
+    color: #000;
+    display: block;
+    padding: 0 8px;
+}
+
+#nav .icon-subnav {
+    font-size: 9px;
+}
+
+#nav #subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover #subnav {
+    display: block;
+}
+
+#header .menu-moblie,
+#header .search {
+    float: right;
+    padding: 8px 16px;
+}
+
+#header .menu-icon,
+#header .icon-search{
+    color: #fff;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#header .menu-mobile{
+    display: block;
+}
+
+#header .menu-mobile:hover{
+    background-color: #ccc;
+}
+
+
+#header .search:hover {
+    color: #fff;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+#spotlight {
+    min-height: 350px;
+    max-height: 600px;
+    position: relative;
+    padding-top: 50%;
+    margin-top:-1px;
+    background: url("https://www.w3schools.com/w3images/sailboat.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+#spotlight .spotlight-img {
+    position: absolute;
+    text-align: center;
+    bottom: 37px;
+    width: 100%;
+    color: #fff;
+}
+
+#spotlight .container{
+    float: left;
+    padding: 0.01em 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#spotlight .container-button{
+    color: #fff;
+    background-color: #000;
+    font-size: 24px;
+    padding: 8px 16px;
+    text-transform: none;
+    border: none;
+}
+
+#spotlight .container-button:hover{
+    cursor: pointer;
+    background-color: #009688;
+    color: #fff;
+}
+
+#content {
+    
+}
+
+#content .section{
+    width: 100%;
+    padding: 64px 16px;
+}
+
+.section-heading{
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.section-subheading{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .member-list{
+    padding-top: 15px;
+}
+
+.member-list .member-item{
+    float: left;
+}
+
+.member-list .member-img{
+    border-radius: 50%;
+    width: 130px;
+    font-size: 15px;
+}
+
+.member-img:hover{
+    opacity: 0.6;
+}
+
+#content #work{
+    color: #fff;
+    background-color: #333;
+    width: 100%;
+    padding: 64px 8px;
+}
+
+#work .funtion{
+    color: #fff;
+    padding: 0 8px;
+}
+
+#work .funtion-heading{
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: inherit;
+}
+
+#work .funtion-text{
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+#work .customer{
+    background: no-repeat;
+    padding: 0 8px;
+    display: grid;
+}
+
+#work .customer-img{
+    width: 100%;
+}
+
+#work .customer-funtion{
+    color: #000;
+    background-color:#fff;
+    padding: 0 15px 16px;
+}
+
+.h3-attribute{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.h4-attribute,
+.h3-attribute{
+    font-weight: inherit;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+#work .work-container{
+    position: relative;
+
+}
+
+.work-icon{
+    position: absolute;
+    top: 520px;
+    right: 26px;
+    color: #fff;
+    background-color: #009688;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px 18px;
+}
+
+.work-icon:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.customer-funtion p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content #price{
+    padding: 64px 8px;
+}
+
+#price .box{
+    float: left;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding: 0 8px;
+}
+
+.box li{
+    list-style-type: none ;
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+#price .box ul:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box .box-heading{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 16px;
+}
+
+.box .box-heading-funtion{
+    margin: 24px 0;
+    background-color: #000;
+}
+
+.box .price-wide{
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#price .price-icon{
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.theme{
+    color: #000;
+    background-color: #f0f0f0;
+    padding: 24px 16px;
+}
+
+.teal{
+    background-color: #009688;
+    padding: 12px 24px;
+    border: none;
+    color: #fff;
+    display: inline;
+}
+
+.teal:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#contact{
+    padding: 0.01em 16px;
+}
+
+.contact-container{
+    color: #000;
+    background-color: #f0f0f0f0;
+    padding: 64px 16px !important; 
+}
+
+#contact .contact-section-heading{
+    padding: 16px 0;
+}
+
+#contact .section-bottom-bar{
+    color: #000;
+    opacity: 1;
+    font-size: 24px !important;
+    border-color: #009688 !important;
+    border-bottom: 6px solid #ccc;
+    display: inline;
+}
+
+.contact-icon{
+    color: #009688;
+}
+
+form{
+    color: #000;
+    background-color: #fff;
+    padding: 16px;
+}
+
+form{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.contact-section{
+    margin: 16px 0;
+}
+
+.contact-attribute{
+    padding-bottom: 5px;
+}
+
+input{
+    display: block;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+}
+
+.check{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px;
+    overflow: visible;
+    display: inline;
+}
+
+.contact-button{
+    float: right;
+    width: 69px;
+    height: 33px;
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    font-size: 15px;
+}
+
+.contact-button:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#footer {
+    
+}
+
+#footer .map{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    display: grid;
+}
+
+#footer .footer-infor{
+    padding: 32px 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+#footer .footer-infor-heading{
+    color: #fff;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+#foooter .footer-infor a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-infor >a >i{
+    color: #fff;
+    background-color: #009688;
+    padding: 8px 8px;
+}
+
+.footer-infor>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    /*dung ca 2*/
+}
+
+.footer-infor a:hover i{
+    color: #000;
+    background-color: #ccc;
+}
+
+#footer .footer-infor-subheading{
+    margin: 15px 0;
+}
+
+#footer .footer-infor-subheading a{
+    color: #fff;
+}
+
+#footer .footer-tool{
+    float: right;
+    position: relative;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.footer-tool .tool-tip{
+    background-color: #009688;
+    padding: 8px;
+    display: none;
+}
+
+.tool-icon{
+    background-color: #000 !important;
+    color: #fff !important;
+    padding: 8px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.footer-tool>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
